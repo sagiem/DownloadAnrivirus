@@ -8,12 +8,10 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-
-
             var webclient = new WebClient();
             webclient.Proxy = null;
+            Console.WriteLine("Идет загрузка");
             webclient.DownloadFile(new Uri("https://devbuilds.s.kaspersky-labs.com/devbuilds/KVRT/latest/full/KVRT.exe"), "kaspersky.exe");
-            webclient.DownloadFile(new Uri("http://www.freedrweb.com/download+cureit/gr/?lng=ru"), "DrWeb.exe");
         }
     }
 }
